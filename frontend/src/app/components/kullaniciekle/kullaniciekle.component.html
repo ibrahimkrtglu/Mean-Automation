@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+    <div class="loginPanel">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title">Kullanıcı Ekle</div>
+            </div>
+  
+            <div class="panel-body">
+                <form (submit)="onRegisterSubmit()">
+                <!-- ad -->
+                <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <input id="isim" type="text" class="form-control" [(ngModel)]="ad" name="ad" placeholder="İsim">
+                </div>
+                <!-- soyad -->
+                <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <input id="soyisim" type="text" class="form-control" [(ngModel)]="soyad" name="soyad" placeholder="Soyisim">
+                </div>
+                <!-- email -->
+                <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input id="email" type="email" class="form-control" [(ngModel)]="email" name="email" placeholder="E-mail">
+                </div>
+                <!-- kullaniciadi -->
+                <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="kullaniciAdi" type="text" class="form-control" [(ngModel)]="kullaniciAdi" name="kullaniciAdi" placeholder="Kullanıcı Adı">
+                </div>
+                <!-- sifre -->
+                <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="sifre" type="password" class="form-control" [(ngModel)]="sifre" name="sifre" placeholder="Şifre">
+                </div>
+                    <input type="submit" class="btn btn-success" value="Kayıt Et">
+                    
+                </form>
+            </div>
+  
+            <div class="panel-footer clearfix">
+                <div class="pull-right">
+                  
+  
+                </div>    
+  
+            </div>
+        </div>
+    </div>
+       
+    </div>
+  
+  </div>
+  

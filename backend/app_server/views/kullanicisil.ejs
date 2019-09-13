@@ -1,0 +1,34 @@
+
+
+<div class="container">
+<table class="greyGridTable">
+<caption style="border: inherit; background-color:#000000;color:#ffffff"><center>Kullanıcılar Listesi</center></caption>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>İsim</th>
+            <th>Soyisim</th>
+            <th>E-mail</th>
+            <th>Kullanici Adi</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <%for(var i=0;i<kullanicilar.length;i++){%>
+        <tr class="info">
+            <td><%=i+1%></td>
+            <td><%=kullanicilar[i].ad%></td>
+            <td><%=kullanicilar[i].soyad%></td>
+            <td><%=kullanicilar[i].email%></td>
+            <td><%=kullanicilar[i].kullaniciAdi%></td>
+            <td><a href="/kullanicisil/sil/<%=kullanicilar[i].kullaniciAdi%>">sil</a></td>
+        </tr>
+        <%}%>
+
+        
+    </tbody>
+        
+
+</table>
+</div>

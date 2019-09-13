@@ -1,0 +1,34 @@
+
+<body>
+        <div class="container">
+          <table class="greyGridTable">
+          <caption style="border: inherit; background-color:#000000;color:#ffffff">Kullanıcılar Listesi</caption>
+              <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>İsim</th>
+                      <th>Soyisim</th>
+                      <th>E-mail</th>
+                      <th>Kullanici Adi</th>
+                  </tr>
+              </thead>
+              <tbody *ngFor="let adi of ad; let i = index">
+          
+                 
+                  <tr class="info">
+                      <td>{{i+1}}</td>
+                      <td>{{ad[i]}}</td>
+                      <td>{{soyad[i]}}</td>
+                      <td>{{email[i]}}</td>
+                      <td>{{kullaniciadi[i]}}</td>
+                      <td> <button (click)="sil(i)" class="btn btn-danger"> Sil </button> </td>
+                  </tr>
+                  
+               
+                  
+              </tbody>
+                  
+          
+          </table>
+          </div>
+        </body>
