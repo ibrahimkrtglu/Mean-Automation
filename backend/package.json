@@ -12,7 +12,7 @@
         "express": "^4.16.3",
         "express-ejs-layouts": "^2.5.0",
         "jsonwebtoken": "^8.3.0",
-        "mongoose": "^5.2.9",
+        "mongoose": "^5.7.5",
         "cors": "*",
         "passport": "*",
         "passport-jwt": "*"
